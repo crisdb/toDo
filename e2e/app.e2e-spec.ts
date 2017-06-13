@@ -1,14 +1,14 @@
-import { TodoListfromAPage } from './app.po';
+import { TodoList } from './app.po';
 
-describe('todo-listfrom-a App', () => {
-  let page: TodoListfromAPage;
+describe('todo-list', () => {
+  let page: TodoList;
 
   beforeEach(() => {
-    page = new TodoListfromAPage();
+    page = new TodoList();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('Todo List!!');
   });
 });

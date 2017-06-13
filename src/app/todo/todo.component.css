@@ -124,7 +124,8 @@ ul.todo-list {
   transition: color 0.4s;
 }
 
-.todo-list li .destroy {
+
+.todo-list li .btn-danger {
   display: none;
   position: absolute;
   top: 0;
@@ -134,22 +135,16 @@ ul.todo-list {
   height: 40px;
   margin: auto 0;
   font-size: 30px;
-  color: #cc9a9a;
-  margin-bottom: 11px;
   transition: color 0.2s ease-out;
 }
-
-.todo-list li .destroy:hover {
-  color: #af5b5e;
-}
-
-.todo-list li .destroy:after {
+.todo-list li .btn-danger:after {
   content: '×';
 }
 
-.todo-list li:hover .destroy {
+.todo-list li:hover .btn-danger {
   display: block;
 }
+
 
 .todo-list li .edit {
   display: none;
