@@ -21,7 +21,13 @@
       <li *ngFor="let todo of todos" [ngClass]="{editing: todo.editing}" >
         <div class="view">
           <label (dblclick)="todo.editing = true">{{todo.title}}</label>
+
           <button class="destroy" (click)="destroyTodo(todo)"></button>
+          <button type="button" class="btn btn-danger" (click)="destroyTodo(todo)"></button>
+
+
+
+
         </div>
         <input class="edit"
                #updatedTodo
