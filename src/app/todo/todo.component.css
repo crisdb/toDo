@@ -135,10 +135,8 @@ ul.todo-list {
   height: 40px;
   margin: auto 0;
   font-size: 30px;
-  margin-bottom: 11px;
   transition: color 0.2s ease-out;
 }
-
 .todo-list li .btn-danger:after {
   content: '×';
 }
@@ -146,6 +144,7 @@ ul.todo-list {
 .todo-list li:hover .btn-danger {
   display: block;
 }
+
 
 .todo-list li .edit {
   display: none;
